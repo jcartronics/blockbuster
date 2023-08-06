@@ -14,10 +14,12 @@ class MoviesController < ApplicationController
   # GET /movies/new
   def new
     @movie = Movie.new
+    @clients = Client.all
   end
 
   # GET /movies/1/edit
   def edit
+    @clients = Client.all
   end
 
   # POST /movies or /movies.json
