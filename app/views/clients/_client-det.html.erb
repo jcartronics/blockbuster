@@ -1,0 +1,23 @@
+<div id="<%= dom_id @client %>">
+      <table class="table table-dark table-hover table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Última pelicula</th>
+            <th scope="col" colspan="2"></th>
+          </tr>
+        </thead>
+      <tbody>
+      <tr>
+          <th scope="row"><%= @client.id %></th>
+          <td><%= @client.name %></td>
+          <td><%= @client.age %></td>
+          <td><%= @client.movies.last %></td>
+          <td><%= link_to "Editar", edit_client_path(@client), class: "btn btn-secondary mb-1" %></td>
+          <td><%= button_to "Eliminar", @client, method: :delete, class: "btn btn-danger mb-1" %></td>
+        </tr>
+      </tbody>
+    </table>
+</div>

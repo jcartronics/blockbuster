@@ -1,9 +1,9 @@
-
-  <div class="col-4 py-2">
-    <div class="card">
-      <div class="card-body">
-        <h5 class="card-title"><%= movie.name %></h5>
-        <%= link_to "Show this movie", movie, class: "btn btn-primary" %>
-      </div>
-    </div>
-  </div>
+<div id="<%= dom_id movie %>">
+  <tr>
+    <th scope="row"><%= movie.id %></th>
+    <td><%= movie.name %></td>
+    <td><%= link_to "Ver", movie, class: "btn btn-success mb-1" %></td>
+    <td><%= link_to "Editar", edit_movie_path(movie), class: "btn btn-secondary mb-1" %></td>
+    <td><%= button_to "Eliminar", movie, method: :delete, class: "btn btn-danger mb-1" %></td>
+  </tr>
+</div>

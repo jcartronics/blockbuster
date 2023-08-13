@@ -1,13 +1,22 @@
 <p style="color: green"><%= notice %></p>
 
 <div class="container">
-  <h1>Movies</h1>
-  <%= link_to "New movie", new_movie_path %>
+  <h1>Peliculas</h1>
+  <%= link_to "Nueva Pelicula", new_movie_path, class: "btn btn-warning my-1" %>
   <div id="movies">
-    <div class="row">
+  <table class="table table-dark table-hover table-striped">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Pelicula</th>
+          <th scope="col" colspan="3">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
       <% @movies.each do |movie| %>
         <%= render movie %>
       <% end %>
-    </div>
+      </tbody>
+    </table>
   </div>
 </div>

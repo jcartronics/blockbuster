@@ -11,17 +11,17 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
+  <div class="input-group mb-3">
+    <%= form.label :name, style: "display: block", class: "input-group-text" %>
+    <%= form.text_field :name, class: "form-control" %>
+  </div>
+
+  <div class="input-group mb-3">
+    <%= form.label :client_id, style: "display: block", class: "input-group-text" %>
+    <%= form.collection_select :client_id, @clients, :id, :name, include_blank: true, class: "form-select form-select-lg" %>
   </div>
 
   <div>
-    <%= form.label :client_id, style: "display: block" %>
-    <%= form.collection_select :client_id, @clients, :id, :name, include_blank: true %>
-  </div>
-
-  <div>
-    <%= form.submit %>
+    <%= form.submit "Ingresar", class: "btn btn-secondary my-1" %>
   </div>
 <% end %>
