@@ -1,24 +1,42 @@
-# README
+# RoR - Desafio 1 - Relaciones 1 a N en los modelos
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+En este desafío validaremos nuestros conocimientos de Relaciones 1 a N en Rails.
 
-Things you may want to cover:
+## Requerimientos
 
-* Ruby version
+- [✅] Set-up inicial del proyecto, el proyecto viene con algunos errores que deben ser corregidos y cargar datos ficticios.
+- [✅] Al editar una película puedo asignarle un cliente.
+- [✅] En el index de clientes mostrar si el cliente tiene una película arrendada.
+- [✅] Modificar diseño de la aplicación, no puede ser igual al entregado
+- [✅] Hacer deploy a heroku.
 
-* System dependencies
+## Instalación
 
-* Configuration
+- Clonar el proyecto
+- Ejecutar:
 
-* Database creation
+```bash
+bundle install
+```
 
-* Database initialization
+## Uso
 
-* How to run the test suite
+```bash
+rails s
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Contribuir
 
-* Deployment instructions
+Se aceptan pull requests. Para cambios mayores, por favor abra un issue primero
+para revisar lo que le gustaría cambiar.
 
-* ...
+Asegúrese de realizar las pruebas oportunas.
+
+## Licencia
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Heroku
+
+Link al proyecto en Heroku:
+[https://morning-shelf-71254-a8ee08d3622a.herokuapp.com/](https://morning-shelf-71254-a8ee08d3622a.herokuapp.com/)
